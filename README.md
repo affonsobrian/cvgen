@@ -1,2 +1,2 @@
-# cvgen
-A Curriculum Vitae Generator
+# CVGen
+CVGen is a Curriculum Vitae Generator developed with python

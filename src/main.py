@@ -1,6 +1,5 @@
-from models.Curriculum import Curriculum
-from models.PersonalData import PersonalData
+import models
 
-instance = Curriculum.generate_instance()
-
-print(instance.get_deep_dict())
+def main():
+    instance = models.Curriculum.generate_instance()
+    print(instance)

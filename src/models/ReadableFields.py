@@ -82,6 +82,3 @@ class ReadableFields:
             'professional_experience': ProfessionalExperience
         }
         return callable_classes
-    
-    def get_all_needed_classes(self):
-        for field in self.

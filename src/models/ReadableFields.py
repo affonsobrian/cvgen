@@ -69,4 +69,6 @@ class ReadableFields:
         """
         Return the a dictionary that represent fields and their respective class
         """
-        return {}
+        from models import variables
+        return variables
+

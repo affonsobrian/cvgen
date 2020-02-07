@@ -1,7 +1,6 @@
 import copy
 import ast
 
-
 class ReadableFields:
     """
     This class is responsible for getting all fields from the constructors of 
@@ -70,18 +69,6 @@ class ReadableFields:
         """
         Return the a dictionary that represent fields and their respective class
         """
-        from .Address import Address
-        from .Curriculum import Curriculum
-        from .PersonalData import PersonalData
-        from .ProfessionalExperience import ProfessionalExperience
+        from models import variables
+        return variables
 
-        callable_classes = {
-            'address': Address,
-            'curriculum': Curriculum,
-            'personal_data': PersonalData,
-            'professional_experience': ProfessionalExperience
-        }
-        return callable_classes
-    
-    def get_all_needed_classes(self):
-        for field in self.

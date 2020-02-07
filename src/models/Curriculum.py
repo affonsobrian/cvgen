@@ -22,3 +22,4 @@ class Curriculum(ReadableFields):
             else:
                 kwargs[field] = input(f"Please inform {field}: ")
         return cls(**kwargs)
+

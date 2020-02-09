@@ -3,7 +3,7 @@ import ast
 
 class ReadableFields:
     """
-    This class is responsible for getting all fields from the constructors of 
+    This class is responsible for getting all fields from the constructors of
     the classes that inherity from it
     """
     def __init__(self):
@@ -11,13 +11,13 @@ class ReadableFields:
         This constructor makes impossible to create a class without a __init__ mehtod.
         """
         raise Exception("Class must implement a constructor")
-    
+
     def get_dict(self):
         """
         Return a copy of the dictionary that represents the class
         """
         return copy.deepcopy(self.__dict__)
-    
+
     def get_deep_dict(self):
         """
         Return a dictionary represeting the classes and all their sub-classes
@@ -63,9 +63,9 @@ class ReadableFields:
             else:
                 kwargs[field] = input(f"Please inform {field}: ")
         return cls(**kwargs)
-    
+
     @classmethod
-    def get_callable_classes(cls):
+    def get_callable_classes(cls): 
         """
         Return the a dictionary that represent fields and their respective class
         """

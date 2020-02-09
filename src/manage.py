@@ -5,7 +5,6 @@ from os import listdir
 from os.path import isfile, join
 from main import main
 
-
 def snake_case(value):
     """
     Convert camel case to snake case.
@@ -64,7 +63,7 @@ if not args:
 if args.build:
     path = os.path.abspath(__file__)
     path = path.replace(__file__, 'models')
-    files = get_models_files(path)  
+    files = get_models_files(path)
     build_models_init(path, files)
 elif args.run:
     main()
